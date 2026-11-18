@@ -1,69 +1,72 @@
-# Penetration Testing Portfolio
+# Penetration Testing & Security Research Portfolio
 
-A curated portfolio of **hands-on penetration testing practice**, assessment methodologies, and security research. The goal is to demonstrate how I approach testing, validate technical observations, and document results in controlled lab environments.
+A collection of **security assessment reports, hands-on lab write-ups, and technical research** from projects I have completed. This repository serves as a central place to document my practical experience, research process, technical findings, and lessons learned as I continue developing my skills in offensive security and vulnerability research.
 
-> **Context:** The OSCP-A/B/C entries summarize practice lab work. They are **not** the OSCP certification, official exam submissions, customer engagements, or public challenge walkthroughs. Original lab reports are retained privately.
+Rather than focusing on a single certification or lab platform, the portfolio brings together work from **penetration testing labs, vulnerability analysis, malware research, and independent security projects**.
 
-## Practice at a glance
+## What You'll Find Here
 
-| Area | Experience documented |
+| Area | Description |
 | --- | --- |
-| OSCP-style technical reports | 3 privately maintained reports (OSCP-A, OSCP-B, OSCP-C) |
-| Standalone practice targets | 9 lab machines across Linux and Windows |
-| Active Directory practice | 3 multi-host lab sets |
-| Assessment activities | Reconnaissance, service enumeration, vulnerability validation, access verification, local privilege assessment, and AD path analysis |
-| Reporting workflow | Structured technical notes, reproducible evidence in private reports, and clear descriptions of observed outcomes |
+| **Lab Reports** | Summaries and reports from completed security labs, with emphasis on the assessment process, technical observations, and lessons learned. |
+| **Penetration Testing Methodologies** | Reusable notes on web application, infrastructure, and Active Directory assessment workflows. |
+| **Security Research** | Research notes and reports covering vulnerability analysis, attack-chain reproduction, malware behavior, and controlled experiments. |
+| **Reporting Practice** | Report structures and templates used to organize technical evidence and communicate test results. |
 
-These counts describe **lab exercises and written practice**, not production penetration testing experience.
+## Repository Structure
 
-## What this portfolio demonstrates
+```text
+penetration-testing-portfolio/
+├── README.md
+├── methodologies/
+│   ├── web-pentesting.md
+│   ├── infrastructure-pentesting.md
+│   └── active-directory-assessment.md
+├── sample-reports/
+│   ├── README.md
+│   ├── oscp-a-practice.md
+│   ├── oscp-b-practice.md
+│   ├── oscp-c-practice.md
+│   └── independent-lab-assessment-template.md
+└── research/
+    └── vulnerability-research.md
+```
 
-- **Web-facing services:** Discovered HTTP attack surfaces, evaluated exposed content and application behavior, and reviewed vulnerable service or dependency conditions in controlled labs.
-- **Infrastructure:** Enumerated TCP/UDP services, assessed access boundaries and exposed credentials, and validated Linux/Windows privilege escalation behavior in practice environments.
-- **Active Directory:** Reviewed domain topology and privilege relationships, investigated credential-related attack paths, and practiced controlled network pivoting and lateral movement.
-- **Technical documentation:** Maintained three OSCP-style reports with testing narratives, validation evidence, and organized findings. The public summaries omit exercise solutions.
+### [Methodologies](methodologies/)
 
-## Repository contents
+Documented approaches and checklists developed from hands-on practice:
 
-| Path | Contents |
-| --- | --- |
-| [`methodologies/web-pentesting.md`](methodologies/web-pentesting.md) | Web-service assessment workflow drawn from practice |
-| [`methodologies/infrastructure-pentesting.md`](methodologies/infrastructure-pentesting.md) | Network, Linux, and Windows assessment workflow |
-| [`methodologies/active-directory-assessment.md`](methodologies/active-directory-assessment.md) | AD-oriented assessment framework |
-| [`sample-reports/`](sample-reports/README.md) | Public-safe OSCP-A/B/C practice reflections and an independent-report template |
-| [`research/vulnerability-research.md`](research/vulnerability-research.md) | Reserved index for future authorized research publications |
+- [Web Application Penetration Testing](methodologies/web-pentesting.md)
+- [Infrastructure Penetration Testing](methodologies/infrastructure-pentesting.md)
+- [Active Directory Assessment](methodologies/active-directory-assessment.md)
 
-### Practice report reflections
+### [Lab Reports & Practice Write-ups](sample-reports/)
 
-- [OSCP-A — Practice Summary](sample-reports/oscp-a-practice.md)
-- [OSCP-B — Practice Summary](sample-reports/oscp-b-practice.md)
-- [OSCP-C — Practice Summary](sample-reports/oscp-c-practice.md)
+Technical documentation from completed lab exercises. The currently published materials include **public-safe summaries of OSCP-style practice** and an [independent assessment report template](sample-reports/independent-lab-assessment-template.md). Additional lab write-ups can be added here as they are completed and cleared for publication.
 
-Each reflection describes scope, skill areas, documentation habits, and learning outcomes **without associating a specific target with its solution**.
+### [Security Research](research/vulnerability-research.md)
 
-## Tools encountered in the lab work
+An index for deeper research reports and experiments. Planned additions include work on the **SNOWYDRIVE campaign** and **CVE-2026-97229**, which will be linked here once the reports are finalized and approved for publication. These reports are **not yet included** in the repository.
 
-| Task | Examples used in the source reports |
-| --- | --- |
-| Service and web discovery | Nmap, ffuf, SearchSploit |
-| Linux and Windows local assessment | LinPEAS, WinPEAS, native system utilities |
-| Internal network and AD review | BloodHound, SharpHound, NetExec, Impacket |
-| Controlled connectivity and access validation | SSH, WinRM, Ligolo-ng, Chisel |
-| Reproducible lab tooling | Docker, Python, C toolchain |
-| Reporting | SysReptor |
+## Areas of Interest
 
-Tool names indicate hands-on exposure in the associated work; they do not imply expert-level proficiency with every tool.
+- Web application and infrastructure penetration testing
+- Windows, Linux, and Active Directory security
+- Vulnerability research and proof-of-concept validation
+- Malware analysis and reverse engineering
+- Attack-chain analysis and controlled reproduction
+- Technical documentation and security reporting
 
-## Scope, provenance, and publication boundaries
+## Documentation Approach
 
-The three original reports include challenge-specific data that is **not published here**. This repository intentionally excludes host addresses, usernames, passwords, hashes, flags, payloads, exact exploit commands, and step-by-step challenge solutions. The methodology files are generalized descriptions and are **not replacements for the original reports**.
+Each published entry aims to explain **the scope of the work, the assessment or research approach, the tools and techniques involved, and the key outcomes or lessons learned**. The level of detail depends on what can be shared responsibly.
 
-The repository does not assert a client engagement, an earned OSCP certification, or a production security finding. Results from lab activities are labeled as such. There are no CVSS scores or remediation sections in the published practice summaries.
+This repository is updated as new labs and research projects are completed. Entries describe the work available at the time of publication; planned research is clearly marked as such.
 
-## Planned additions
+## Scope & Responsible Disclosure
 
-The research index reserves space for future, separately reviewed publications about **SNOWYDRIVE** and **CVE-2026-97229**. The underlying reports are **not included yet** and are not represented as published work here.
+All practical work described here is associated with **authorized, controlled environments**. Public materials are reviewed to avoid disclosing confidential details, credentials, flags, or restricted challenge solutions. Lab exercises are distinguished from professional client assessments and do not imply an earned certification.
 
 ---
 
-**Portfolio focus:** practical assessment methodology, technical reasoning, and clear lab documentation.
+*This portfolio is an evolving record of hands-on security practice, technical research, and continuous learning.*
